@@ -1,0 +1,100 @@
+
+body {
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(./img/bg\ img\ ph3.jpg);
+    transition: background-image 0.5s ease;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    border-radius: 60px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+nav a {
+    text-decoration: dotted;
+    color: rgba(5, 5, 243, 0.865);
+}
+
+header {
+    color: rgb(249, 139, 5);
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.img-phar {
+    width: 900px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 60px;
+}
+
+.welcome {
+    font-size: 20px;
+    text-align: center;
+}
+
+.welcome h3 {
+    color: rgb(247, 77, 3);
+}
+
+.welcome h3,
+.welcome p {
+    margin: 0;
+}
+
+.services {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service {
+    border: 2px solid greenyellow;
+    padding: 23px;
+    margin: 30px;
+    width: 390px;
+    height: 290px;
+    border-radius: 50px;
+    text-align: center;
+    transition: all ease 1.9s;
+    cursor: pointer;
+    scale: 5s;
+}
+
+.service img {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    margin-left: 19px;
+    border-radius: 180px;
+}
+
+.services .service img:hover {
+    scale: 1.1;
+    opacity: 0.9;
+}
+
+.service h2:hover {
+    box-shadow: rgb(245, 2, 225);
+    scale: 1.1;
+    background-color: #4FB6C4;
+    border-radius: 200px;
+}

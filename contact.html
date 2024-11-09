@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            background-image: url(./img/2.png);
+            transition: background-image 0.5s ease;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        nav {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            padding: 20px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(11, 49, 240);
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .social {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 60px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+            margin: 20px 0;
+            transition: background-color 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .social1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 10px;
+            text-align: center;
+            transition: transform 0.5s ease;
+        }
+
+        .social1 img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .social1 h1 {
+            font-size: 16px;
+            color: #13f907;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .social1:hover {
+            transform: scale(1.1);
+        }
+
+        .social1 img:hover {
+            transform: rotate(360deg);
+        }
+
+        .social:hover {
+            background-color: #f6f6f6;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a:hover,
+        .social1 h1:hover {
+            color: #f40606;
+        }
+
+        .scaleup {
+            background-color: #f9f4f4;
+            padding: 20px;
+            width: 250px;
+            height: 50px;
+            align-items: center;
+            border-radius: 40px;
+            animation: scaleup;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            margin-top: 80px;
+            transition: color 0.5s ease;
+        }
+
+        .scaleup h4 {
+            text-align: center;
+            line-height: 3px;
+            color: coral;
+        }
+
+        @keyframes scaleup {
+            0% {
+                transform: translateX(300px);
+            }
+
+            50% {
+                transform: translateX(30px);
+            }
+
+            100% {
+                transform: translateX(300px);
+            }
+        }
+
+        /* Contact form  */
+        .contact-form {
+            background-color: #05e4e8;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 50px auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .contact-form button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="./health.html">Home</a></li>
+            <li><a href="./service.html">Adeegyada</a></li>
+            <li><a href="./balan.html">Balanqabashada</a></li>
+            <li><a href="./pharmacy.html">Farmashiyaha</a></li>
+            <li><a href="./doctor.html">Doctor</a></li>
+           
+            <li><a href="./about.html">Nagu Saabsan</a></li>
+            <li><a href="./testimonials.html" target="_blank">Testimonials</a></li>
+        </ul>
+    </nav>
+
+    <div class="scaleup">
+        <h4>Kala Soo Xiriir Mogadisho clinic</h4>
+    </div>
+
+    <div class="social">
+        <div class="social1">
+            <img src="./img/facebook.png" alt="Facebook">
+            <h1>Mogadisho Clinic</h1>
+        </div>
+        <div class="social1">
+            <img src="./img/whatsapp.png" alt="WhatsApp">
+            <h1>+252 907822828</h1>
+        </div>
+        <div class="social1">
+            <img src="./img/twitter.png" alt="Twitter">
+            <h1>@Mogadishoclinic</h1>
+        </div>
+        <div class="social1">
+            <img src="./img/social.png" alt="Social">
+            <h1>Mogadisho Clinic</h1>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Magaca" required>
+            <input type="email" id="email" placeholder=" Emailkaaga" required>
+            <textarea id="message" placeholder="fariintaada" rows="5" required></textarea>
+            <button type="submit">Dir</button>
+        </form>
+    </div>
+<script src="./contact.js"></script>
+
+</body>
+
+</html>
